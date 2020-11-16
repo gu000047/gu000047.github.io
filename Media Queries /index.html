@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style type="text/css">
+    
+    
+    @media screen and (max-width: 480px) {
+
+      .largekitten{
+        display: none;
+      }
+
+      .gameslist{
+        list-style: none;
+        padding: 10px;
+      }
+
+      .gameslist li{
+        border-bottom: 1px solid #ccc;
+      }
+
+    }
+
+    @media screen and (min-width: 480px) {
+
+      .largekitten{
+        display: block;
+      }
+
+      .smallkitten{
+        display: none;
+      }
+      
+    }
+
+    @media screen and (min-width: 800px) {
+
+      .gameslist{
+        float: left;
+      }
+
+      .gameslist li{
+        border-bottom: 0;
+        border-right:1px solid #ccc;
+      }
+      
+    }
+
+    @media screen and (min-width: 900px) and (max-width: 1200px) {
+
+      h1{
+        font-size: 4rem;
+      }
+      
+    }
+
+    @media screen and (min-width: 1200px) {
+      
+      h1{
+        font-size: 6rem;
+      }
+
+    }
+
+
+  </style>
+</head>
+<body>
+
+
+<main class="container">
+  <h1>Meet Haiku</h1>
+  <img class="smallkitten" src="https://placekitten.com/200/200" alt="kitten image">
+  <img class="largekitten" src="https://placekitten.com/800/600" alt="kitten image">
+  <p>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic cumque veritatis odio eius quibusdam nemo. Mollitia iste explicabo reprehenderit est dolorum molestiae debitis reiciendis tempore, qui laudantium recusandae minima aut.
+  </p>
+  <h3>Fun Games</h3>
+  <ul class="gameslist">
+    <li>Scratch the furniture</li>
+    <li>Jump on keyboard</li>
+    <li>Stare the human</li>
+  </ul>
+</main>
+<div class="instructions">
+</div> 
+
+
+
+</body>
+</html>
+
