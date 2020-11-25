@@ -1,0 +1,49 @@
+
+body{
+	font-family: 'Microsoft YaHei';
+	font-size: 18px;
+}
+header,footer{
+	background-color: pink;
+	text-align: center;
+}
+.title{
+	color: #fff;
+	text-align: center;
+}
+.img{
+	text-align: center;
+	margin-top: 20px;
+}
+.subtitle{
+	color: red;
+}
+#my-image{
+	box-shadow: 0px 0px 2px 1px #000;
+	width: 200px;
+	
+}
+ul{
+	list-style-type:square;
+}
+li:nth-child(odd){
+	background-color: pink;
+}
+nav{
+	text-align: center;
+}
+nav a{
+	text-decoration: none;
+	color: #000;
+	margin-right: 60px;
+	border: 1px solid #000;
+	border-radius: 8px;
+	padding: 5px;
+	background-image: url("../img/2.jpg");
+  	background-repeat: repeat;
+}
+nav a:hover{
+	color: #fff;
+	background-image: none;
+	background-color: red;
+}
