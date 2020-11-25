@@ -1,0 +1,22 @@
+html {
+  font-family:  'Open Sans', sans-serif;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.site-header,
+.site-footer {
+   background-color: lavender;
+}
+ 
+main{
+  background-color: lightblue;
+}
+
+.location{
+   background-color: lightpink;
+}
