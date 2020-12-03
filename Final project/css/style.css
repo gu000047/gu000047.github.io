@@ -1,0 +1,275 @@
+*{padding: 0;margin: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+.box{
+  width: 375px;
+  margin: 0 auto;
+}
+.top{
+  background: #222222;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.logo{
+  background: #c78b07;
+  padding-bottom: 50px;
+}
+.logo img{
+  width: 60px;
+  display: block;
+}
+.nav{
+  text-align: center;
+  margin-top: -30px;
+}
+.nav li{
+  line-height: 25px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.nav li a{
+  color: #c78b07;
+}
+.nav li:first-child a{
+  color: #222;
+}
+.form{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.form button{
+  border: none;
+  background: none;
+  outline: none;
+}
+.form button img{
+  height: 30px;
+  width: 29px;
+  display: block;
+}
+.form input{
+  width: 326px;
+  box-sizing: border-box;
+  height: 30px;
+  outline: none;
+  border-radius: 2px;
+  border: 1px solid #777;
+  padding: 0 5px;
+}
+.wel{
+  position: relative;
+}
+.banner img{
+  width: 100%;
+  display: block;
+}
+.wel-text{
+  width: 100%;
+  height: 210px;
+  background: rgba(0,0,0,0.5);
+  position: absolute;
+  top: 30px;
+  box-sizing: border-box;
+  padding: 20px 10px 10px 10px;
+}
+.wel-text h2{
+  color: #fff;
+  font-size: 24px;
+}
+.wel-text p{
+  color: #fff;
+  font-size: 12px;
+}
+.wel-text a{
+  display: block;
+  margin-top: 14px;
+}
+.wel-text a img{
+  width: 130px;
+}
+.about{
+  padding: 10px 10px 30px 10px;
+  background: #ffe6ac;
+}
+.about img{
+  width: 100%;
+  display: block;
+}
+.about h2{
+  margin-top: 20px;
+}
+.about p{
+  font-size: 12px;
+  margin-top: 12px;
+}
+.services{
+  background: #fff;
+  padding: 25px 10px 10px 10px;
+}
+.services h2{
+  margin-bottom: 10px;
+}
+.pic{
+  margin-bottom: 10px;
+}
+.picimg img{
+  width: 100%;
+  display: block;
+}
+.pic-text{
+  padding: 20px 10px 10px 10px;
+  background: #ffe6ac;
+}
+.pic-text p{
+  margin-top: 10px;
+  font-size: 12px;
+}
+.pic-text a{
+  display: flex;
+  width: 150px;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  font-size: 14px;
+  color: #fff;
+  background: #222222;
+  margin-top: 12px;
+}
+.pic-text a img{
+  width: 12px;
+  display: block;
+  margin-left: 10px;
+}
+.vision{
+  position: relative;
+  color: #fff;
+}
+.vision img{
+  width: 100%;
+  display: block;
+}
+.vision div{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 30px 10px 10px 10px;
+}
+.vision div p{
+  font-size: 12px;
+  margin-top: 15px;
+}
+.vision div a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 150px;
+  box-sizing: border-box;
+  color: #fff;
+  border: 1px solid #c78b07;
+  background: #122d4a;
+  margin-top: 25px;
+}
+.vision div a img{
+  width: 12px;
+  display: block;
+  margin-left: 10px;
+}
+.team{
+  padding: 30px 10px 10px 10px;
+}
+.team h2{
+  margin-bottom: 10px;
+}
+.pic1{
+  margin-bottom: 10px;
+}
+.pic1 img{
+  width: 100%;
+  display: block;
+}
+.pic1 div{
+  background: #ffe6ac;
+  padding: 20px 10px;
+}
+.pic1 div h5{
+  margin-top: 5px;
+  padding-block-end: 3px;
+  border-bottom: 2px solid #c78b07;
+}
+.pic1 div p{
+  margin-top: 15px;
+  font-size: 12px;
+}
+.contact{
+  padding: 35px 10px 12px 10px;
+}
+.contact h2{
+  margin-bottom: 15px;
+}
+.contact form{
+  margin-top: 10px;
+  color: #333;
+  font-size: 12px;
+}
+.contact form input{
+  display: block;
+  margin-bottom: 10px;
+  height: 26px;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #333;
+  padding: 0 5px;
+  outline: none;
+  border-radius: 3px;
+}
+.contact form textarea{
+  display: block;
+  margin-bottom: 10px;
+  height: 120px;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #333;
+  padding: 5px;
+  outline: none;
+  border-radius: 3px;
+}
+.contact form button{
+  background: #222222;
+  color:#c78b07;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  margin-top: 5px;
+  padding: 3px 5px;
+}
+.hours{
+  margin-top: 15px;
+}
+.hours h3{
+  margin-bottom: 10px;
+}
+.hours table{
+  width: 100%;
+  font-size: 12px;
+  border-color:#333; border-collapse: collapse;
+}
+.hours table tr td{
+  width: 50%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.hours table tr:first-child td{
+  background: #ffe6ac;
+}
+.location{
+  margin-top: 12px;
+}
+.location img{
+  width: 100%;
+  display: block;
+  margin-top: 10px;
+}
