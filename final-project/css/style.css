@@ -2,15 +2,14 @@
 html{
   font-family: Open Sans;
 }
-body, h1, h2, h3, h4, h5, h6, hr, p{
+body, h1, h2, h3, h4, h5, h6, hr, p{/*Reset*/
   padding: 0;
   margin: 0;
 }
 li{list-style: none;}
 a{text-decoration: none;}
 .box{
-  max-width: 1200px;
-
+  max-width: 1200px;/*Containers up to 1200*/
   min-width:375px;
   margin: 0 auto;
 }
@@ -44,8 +43,8 @@ a{text-decoration: none;}
 }
 .form{
   display: flex;  /*Flexbox*/
-  align-items: center;
-  justify-content: space-between;
+  align-items: center;/*Vertical center*/
+  justify-content: space-between;/*Align both ends*/
 }
 .form button{
   border: none;
@@ -67,7 +66,7 @@ a{text-decoration: none;}
   padding: 0 5px;
 }
 .wel{
-  position: relative;
+  position: relative;/*Relative positioning*/
 }
 .banner img{
   width: 100%;
@@ -77,7 +76,7 @@ a{text-decoration: none;}
   width: 100%;
   height: 210px;
   background: rgba(0,0,0,0.5);
-  position: absolute;
+  position: absolute;/*Relative positioning*/
   top: 30px;
   box-sizing: border-box;
   padding: 20px 10px 10px 10px;
@@ -151,7 +150,7 @@ a{text-decoration: none;}
   margin-left: 10px;
 }
 .vision{
-  position: relative;
+  position: relative;/*Relative positioning*/
   color: #fff;
 }
 .vision img{
@@ -159,7 +158,7 @@ a{text-decoration: none;}
   display: block;
 }
 .vision div{
-  position: absolute;
+  position: absolute;/*Relative positioning*/
   width: 100%;
   top: 0;
   left: 0;
@@ -171,9 +170,9 @@ a{text-decoration: none;}
   margin-top: 15px;
 }
 .vision div a{
-  display: flex;
-  align-items: center;
-  justify-content: center;  
+  display: flex;/*Flexbox*/
+  align-items: center;/*Vertical center*/
+  justify-content: center;  /*align horizontal center*/
   height: 50px;
   width: 150px;
   box-sizing: border-box;
