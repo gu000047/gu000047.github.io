@@ -1,25 +1,17 @@
 *{padding: 0;margin: 0;}
-html{
-  font-family: Open Sans;
-}
-body, h1, h2, h3, h4, h5, h6, hr, p{/*重置代码*/
-  padding: 0;
-  margin: 0;
-}
 li{list-style: none;}
 a{text-decoration: none;}
 .box{
-  max-width: 1200px;/*容器最大为1200*/
-  min-width:375px;
+  width: 375px;
   margin: 0 auto;
 }
 .top{
-  background: #222;
+  background: #222222;
   padding: 10px;
   box-sizing: border-box;
 }
 .logo{
-  background: #c78c06;
+  background: #c78b07;
   padding-bottom: 50px;
 }
 .logo img{
@@ -42,9 +34,9 @@ a{text-decoration: none;}
   color: #222;
 }
 .form{
-  display: flex;  /*Flexbox*/
-  align-items: center;/*垂直居中*/
-  justify-content: space-between;/*两端对齐*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .form button{
   border: none;
@@ -66,7 +58,7 @@ a{text-decoration: none;}
   padding: 0 5px;
 }
 .wel{
-  position: relative;/*相对定位*/
+  position: relative;
 }
 .banner img{
   width: 100%;
@@ -76,7 +68,7 @@ a{text-decoration: none;}
   width: 100%;
   height: 210px;
   background: rgba(0,0,0,0.5);
-  position: absolute;/*绝对定位*/
+  position: absolute;
   top: 30px;
   box-sizing: border-box;
   padding: 20px 10px 10px 10px;
@@ -134,7 +126,7 @@ a{text-decoration: none;}
   font-size: 12px;
 }
 .pic-text a{
-  display: flex;/*Flexbox*/
+  display: flex;
   width: 150px;
   justify-content: center;
   align-items: center;
@@ -150,7 +142,7 @@ a{text-decoration: none;}
   margin-left: 10px;
 }
 .vision{
-  position: relative;/*相对定位*/
+  position: relative;
   color: #fff;
 }
 .vision img{
@@ -158,7 +150,7 @@ a{text-decoration: none;}
   display: block;
 }
 .vision div{
-  position: absolute;/*绝对定位*/
+  position: absolute;
   width: 100%;
   top: 0;
   left: 0;
@@ -170,9 +162,9 @@ a{text-decoration: none;}
   margin-top: 15px;
 }
 .vision div a{
-  display: flex;/*Flexbox*/
-  align-items: center;/*垂直居中*/
-  justify-content: center;  /*水平居中对齐*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 50px;
   width: 150px;
   box-sizing: border-box;
