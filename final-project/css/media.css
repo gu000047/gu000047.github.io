@@ -1,0 +1,74 @@
+@media screen and (min-width: 760px) {
+  .nav li {
+    line-height: 35px;
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  .logo img {
+    width: 90px;
+    display: block;
+  }
+  .form input{
+    width: 90%;
+    height: 40px;
+  }
+  .wel-text{
+    top: 200px;
+    height: 300px;
+  }
+  .wel-text h2{
+    font-size: 30px;
+  }
+  .wel-text p{
+    font-size: 18px;
+  }
+  .wel-text a{
+    margin-top: 80px;
+  }
+  .wel-text a img{
+    width: 200px;
+  }
+  .about h2{
+    font-size: 30px;
+  }
+  .about p{
+    font-size: 16px;
+  }
+  .pic-text p{
+    font-size: 16px;
+  }
+  .pic-text>h3{
+    font-size: 26px;
+  }
+  .vision div p{
+    font-size: 16px;
+  }
+  .vision div a{
+    margin-top: 70px;
+  }
+  .pic1 h3{
+    font-size: 26px;
+  }
+  .pic1 div h5{
+    font-size: 24px;
+  }
+  .pic1 div p{
+    font-size: 16px;
+  }
+  .send h3{
+    font-size: 24px;
+  }
+  .send form p{
+    font-size: 18px;
+  }
+  .contact form input{
+    height: 40px;
+  }
+  .contact form button{
+    padding: 8px 20px;
+    font-size: 20px;
+  }
+  .hours table{
+    font-size: 18px;
+  }
+}
