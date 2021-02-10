@@ -100,15 +100,22 @@ section#home {
 	text-align: left;
 }
 
-h2#style{
+h2.section-title{
 	font-family: sans-serif;
 }
 
-p#style{
+section#contact.contact p{
 	font-family: sans-serif;
 	text-align: center;
-	font-size: large
+	font-size: 1.5rem;
+	padding: 0 4rem;
 }
+ 
+#nav.nav .nav-link{
+	color: black;
+
+}
+
 
 div#contact-form-label{
 	font-family: sans-serif;
