@@ -38,7 +38,7 @@ body,html{
 .main{
 	display: grid;
 	grid-template-columns: 33.3% 33.3% 33.3%;
-	background: url(../images/bg-image/scooter.svg) center center no-repeat;/*Set the background image, display in the center, norepeat*/
+	background: url(images/bg-image/scooter.svg) center center no-repeat;/*Set the background image, display in the center, norepeat*/
 }
 /*Left text area style*/
 .main .left{
