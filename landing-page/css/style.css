@@ -1,0 +1,235 @@
+@font-face
+{
+　　font-family:blod;
+　　src:url('fonts/Montserrat-Bold.ttf'),
+}
+/* Use the margin and padding to reset the style of all elements on the page*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/*Reset a label style with black color*/
+a{
+	text-decoration:none; 
+	color:#000;
+}
+/*Reset link label style*/
+li{
+	list-style: none;
+}
+.container{
+	padding: 3%;
+}
+body{
+	background: #F7F7FF;
+}
+/*I use grid elements here for the head style in order to adopts grid layout and sets the 
+Width ratio*/
+.header{
+	display: grid;
+	grid-template-columns: repeat(3,33.33%);
+	margin-bottom: 50px;
+}
+/*I prefer to use grid element to set the average block columns for mainbox.
+The main content area adopts grid layout and is divided into three parts: left, middle and right*/
+.mainbox{
+	display: grid;
+	grid-template-columns: repeat(3,33.33%);
+	background: url(../images/bg-image/scooter.svg) center center no-repeat;/*Set the background image, display in the center, norepeat*/
+}
+/*They are included in the mainbox, use grid-column-start and end to make 
+vertically present different content on each block
+this is the Left area style*/
+.mainbox .left{
+	grid-column-start: 1;
+	grid-column-end: 2;	
+}
+.mainbox .left h1{
+	font-size: 5vh;
+	font-family: 'Montserrat', sans-serif;
+}
+.mainbox .left h4{
+	font-weight: normal;
+	font-size: 20px;
+	margin-top: 60px;
+	line-height: 1.8;
+}
+.mainbox .mid{
+	grid-column-start: 2;
+	grid-column-end: 3;	
+}
+/*To set the right area the width, and I also use grid to complete the
+ horizontally and vertically centered*/
+.mainbox  .right{
+	grid-column-start: 3;
+	grid-column-end: 4;	
+	justify-content: center;
+	align-items: center;
+}
+/*Right Title Style*/
+h2{
+	font-size: 28px;
+}
+/*I set the font size and margin better to complete the visual effects.
+It presents the right subtitle style*/
+h3{
+	font-size: 16px;
+	font-weight: normal;
+	margin-top: 5px;
+}
+/* The form area which I set background,padding and decoration with border-radius according to 
+the original model vision style. 
+It presents form style*/
+.mainbox form{
+	border-radius: 30px;
+	background: #fff;
+	padding: 30px 40px 40px;
+}
+.main form .last{
+	text-align: center;
+}
+/* Better implement input box setting using input tags, and select multiple block element tags 
+(width, border, margin, and fill), and also use border-radius decoration to set the form 
+outer frame circle corner here.
+It display the input box style of the form,*/
+.mainbox form input{
+	width: 100%;
+	border: none;
+	border-radius: 4px;
+	background: #efefef;
+	margin-top: 10px;
+	padding: 11px;
+}
+.mainbox form .check{
+	display: inline;
+	width:20px;
+}
+.mainbox form  a{
+	color: #FF8480;
+}
+/*Here I use a lot of basic tag to complete each presentation effects.I change the background,
+use some elements (border, margin-top and bottom, padding)to adjust the block area
+in oder to complete the available effects.
+It presents Form submit button*/
+.btn{
+	background: #57EEAB;
+	display: block;
+	border: none;
+	border-radius: 8px;
+	width: 100%;
+	padding:10px;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 24px;
+}
+/*Comming to the footer area. I change the backgroud color for bottom,
+following with the size setting 
+It presents Bottom style*/
+.footer{
+	
+	padding: 20px 10%;
+	margin-top: 20px;
+	background: #FFFD8C;
+}
+.footer1-left .p1{
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+.sch input{
+	border-radius: 4px;
+	background: #efefef;
+	margin-top: 10px;
+	padding: 6px 10px;
+	border: none;
+}
+/*Bottom button*/
+.calculate{
+	background: #FF8480;
+	color: #fff;
+	border-radius: 6px;
+	padding: 4px 25px;
+	display: inline-block;
+	position: relative;
+	top: 3px;
+
+}
+/*It useful to present the layout with grid elments. it's simple and clear.
+The grid layout of footer */
+.footer1{
+	display: grid;
+	grid-template-columns: 4fr 1fr;
+}
+.hours{
+	width: 70px;
+}
+.footer1-right img{
+	margin: 0 10px;
+} 
+/* According to adaption the each layout size. I would like to use media queries to better complete
+auto-adaption for the each size screen layout.first it displays the screen size which greater than 
+or equal to 1024px adapt for pad.
+Adaptive pad*/
+@media screen and (max-width: 1024px) {
+	.wrap{
+		padding: 20px 10%;	
+	}
+	.mainbox{
+		background:none;
+	}
+	/*Gird element can better to division block proportion.
+    Set full line*/
+	.mainbox .left {
+		grid-column-start:1;
+		grid-column-end: 4;	
+	}
+	/*Set full line*/
+	.mainbox .mid {
+    	grid-column-start:1;
+		grid-column-end: 4;	
+    	background: url(../images/bg-image/scooter.svg) center center no-repeat;
+    	min-height: 350px;
+	}
+	/*Set full line*/
+	.mainbox .right {
+    	grid-column-start:1;
+		grid-column-end: 4;	
+    	margin-top: 30px;
+	}
+	
+}
+/* Secondly, it displays the screen size which greater than 
+or equal to 767px adapt for mobile phone.
+Adaptive mobile phone*/
+@media screen and (max-width: 767px) {
+	/*  The following grid elements are complete the whole vision requirements.
+	Set full line*/
+	.calculate{
+		grid-column-start:1;
+		grid-column-end: 4;	
+		text-align: center;
+	}
+	/*Set grid layout*/
+	.sch{
+		display: grid;
+		grid-template-columns:70px auto;
+		grid-gap: 10px;
+	}
+	/*Sets the width of the city box*/
+	.city{
+		grid-column: 2/4;
+    	
+	}
+	.footer1-left{
+		grid-column-start:1;
+		grid-column-end: 3;	
+		
+	}
+	.footer1-right{
+		grid-column-start:1;
+		grid-column-end: 3;	
+		text-align: center;
+		margin-top: 20px;
+	}
+}
