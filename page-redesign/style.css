@@ -1,0 +1,169 @@
+/* This is a page header, the purpose is to reset the base style of the page.
+it is best fit for page margins */
+*{
+    padding: 0;  
+    margin: 0;
+}
+
+/* Use this tag for body can reset the font style for the whole page */
+body{
+    font-family: 'KaiTi';
+}
+
+/* To reset the navigation width to adaptation while adjusting the background
+color, margins and border */
+#nav.nav{
+    width: 80%;
+    background-color: #000;
+    padding: 20px 0;
+    border: 1px dashed #ddd;
+}
+
+/* Using the color tag to change the color of navigation menu option */
+#nav .nav-link{
+    color: #fff;
+}
+
+/* Coming to the main section of the page, to set the width of the body to achieve
+Adaptation, while resetting its border and background color */
+#main.main{
+    max-width: 80%;
+    border: 1px dashed #ddd;
+    background-color: #ddd;
+}
+
+/* To change background color and font for the home section */
+#home.home{
+    color: #fff;
+    background-color: #9900FF;
+    font-family: 'KaiTi';
+    padding: 10%;
+}
+
+/* Using margin-bottom tag to adjust the header text within the home section */
+#home.home .page-title{
+    margin-bottom: 1.5rem;
+}
+
+/* To set the direction of the paragraph text within the home section */
+
+#home.home  p{
+    text-align: left;
+}
+
+/* Choosing these tags to set the background color ,text and font color for the about section */
+
+#about.about{
+    background-color: #FFCC33;
+    color: #000;
+    font-family: 'KaiTi';
+}
+
+/* Using margin-bottom to change the edge of the title text for the about section  */
+
+#about.about .section-title{
+    margin-bottom: 1.5rem;
+}
+
+
+/*  Resetting the image size for about section  */
+
+#about.about  .about-image{
+    width: 20%;
+}
+
+
+/*  Chaning the block margin , using the margin-bottom and right to adjust for
+about paragraph text maigin space */
+
+#about.about  p{
+    margin-bottom: 1rem;
+    margin-right: 3rem ;
+}
+
+
+/*  To change the background color ,font color and padding make a good visual for contact section */
+
+#contact.contact{
+    background-color: #33CCFF;
+    color: #fff;
+    padding: 10%;
+}
+
+
+/*  In the contact block, using the font-family tag to change the font style, margin- bottom tag is 
+use for adjust the block space  */
+
+#contact.contact .section-title{
+    font-family: 'KaiTi';
+    margin-bottom: 1.5rem;
+}
+
+
+/*  Resetting the font styles and useing margin-bottom for contact paragraph to change its margin 
+space */
+
+#contact.contact  p{
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+
+/*  It is look good to change the form width, background and fond color, also best to change the 
+round corner of the form  */
+
+#contact .contact-form{
+    width: 60%;
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
+}
+
+
+/*  This is a labe inside the contact-form-section, also using margin-botoom to change margin
+between the label title and contact-form  */
+
+.contact-form-label{
+    margin-bottom: 1rem; 
+    display: block;
+}
+
+
+/*  Using padding tag to set the input block padding, margin, remove the borde, set the 
+border to round angle. */
+
+.contact-form .contact-form-input{
+    padding: 10px 0;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 10px;
+}   
+
+
+/*  button looks like too small. to use padding tag change its padding, remove its border that is 
+look good. change the background color to red that better than the original; use margin tage
+made a little change to the left; final also change the fonts style for unity */
+
+.contact-form button{
+    padding: 10px;
+    border: none;
+    background-color: red;
+    color: #fff;
+    margin-left: 41%;
+    border-radius: 10px;
+    font-family: 'KaiTi';
+}
+
+
+/*  this is the footer of page. it also needs to be changed by using width tag to reduce the space,
+ to reset the margin by auto and adding padding to make sure it looks equal with the space, change 
+ the background color is black same as the header navigation  */
+
+ footer{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    padding: 2rem 0;
+}
