@@ -1,0 +1,865 @@
+/* I reset the entire page to form a unified format */
+*{
+    margin:0;
+    padding:0;
+    outline:0;  
+    box-sizing: border-box;
+}
+a{
+    color: #977d7c;
+    text-decoration: none;
+}
+.wrap{
+    width: 90%;
+    margin: 0 auto;
+}
+body{
+    color: #000;
+    font-family: 'PingFangSC-Medium,PingFang SC';
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+}
+textarea{
+    resize: none;
+}
+
+/* in the begining of the home page I put into the background image, i aslo choose to adjust 
+it size and heigh to suitable the web vision */
+.header{
+    background: url(../img/1.jpg) no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+}
+/* in the other hand, i change the font color and it size */
+.header i{
+    color: #977d7c;
+    font-size: 20px;
+}
+.header-top{
+    width: 80%;
+    margin:0 auto;
+    padding-top: 30px;
+    display: flex;
+    justify-content:flex-end;
+}
+.header-top a{
+    font-size: 18px;
+    margin: 0 15px;
+}
+.header-top a:hover{
+    color: red;
+}
+.header-top .left{
+    margin-right: 30px;
+}
+.header-top .right{
+    margin-left: 40px;
+}
+.header-top .right a{
+    margin-left: 5px;
+}
+.header h1{
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 40px;
+    color: #977d7c;
+    margin-top: 10%;
+}
+.header h2{
+    color: #fff;
+    font-size: 24px;
+    width: 25%;
+    text-align: center;
+    margin-top: 20%;
+}
+.header h3{
+    color: #fff;
+    font-size: 24px;
+    width: 25%;
+    text-align: center;
+    background-color: #977d7c;
+    padding: 15px 0;
+    letter-spacing: 4px;
+}
+.natural{
+    background-image: url(../img/2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    margin-top: 80px; 
+    color: #fff;
+    font-size: 24px;
+}
+.natural .wrap{
+    width: 90%;
+    height: 100%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.natural .left p{
+    line-height: 2;
+}
+.natural .left  a{
+    color: #fff;
+    text-decoration: underline;
+    margin-top: 10%;
+    display: block;
+}
+.natural .right{
+    text-align: center;
+    margin-right: 10%;
+}
+.natural .right h1{
+    font-size: 50px;
+    margin-bottom: 15px;
+} 
+.natural .right img{
+    animation:myfirst 1s infinite ;
+}
+/* coming to the second part which is nature post here. and i insert the animation element on  
+logo to complete the effect. */
+@keyframes myfirst
+{
+    100%{transform: rotate(360deg);}
+}
+.coffee{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+.coffee .item{
+   width: 33%;
+   background-color: #997d7c;
+}
+.coffee .img{
+    height: 400px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+     color: #fff;
+     position: relative;
+   
+}
+
+/* it is the part of introduce our coffee shop, I put three different image to present 
+each content here. so insert each of background image, I choose use flex mainlit to set the 
+block, then text position
+,color,padding,margin,width,bottom and font-size,ect. */
+.coffee .img1{
+    background-image: url(../img/3.jpg);
+}
+.coffee .img2{
+    background-image: url(../img/4.jpg);
+}
+.coffee .img3{
+    background-image: url(../img/5.jpg);
+}
+.coffee .img h2{
+    text-align: center;
+    padding-top:20%;
+    font-size: 34px;
+}
+.coffee .img  a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: underline;
+    position: absolute;
+    left: 80%;
+    bottom: 20px;
+}
+.coffee .content{
+    color: #fff;
+    padding: 30px;
+    line-height: 1.8;
+    text-align: center;
+    font-size: 20px;
+}
+.cafe{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.cafe .item{
+    background-color: #997d7c;
+    width: 49%;
+    padding:40px;
+  
+}
+.cafe .item h2{
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+.cafe .item .it{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.cafe .item .it img{
+    width: 250px;
+    height: 250px;
+}
+.cafe .item .it div{
+    flex: 1;
+    margin-left:13%;
+}
+.cafe .item p{
+    margin-top: 20px;
+}
+.cafe a{
+    color: #fff;
+    text-decoration: underline;
+    font-size: 20px;
+}
+/* here is the promotion part. i also use flex first to set the part of block. I spereted it 
+with two block here which are named left and right .then I adjust the 
+its position, margin, width ,border,height, ect.*/
+.gift{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 40px;
+    border: 2px solid #ddd;
+    padding: 10px;
+}
+.gift .left{
+    width: 50%;
+    text-align: center;
+    color: #997d7c;
+}
+.gift .left h2{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.gift .left h3{
+    font-size: 30px;
+}
+.gift .left h4{
+    font-size: 20px;
+}
+.gift .right{
+    width: 50%;
+}
+.gift .right img{
+    width: 100%;
+    height: 600px;
+}
+/* the end of the page site. here I choose change text-align,color; then I need to adjust the margin
+,so increase the line-height more. */
+footer{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    line-height: 2;
+   color:  #997d7c;
+}
+
+.header1{
+    background: none;
+    height: auto;
+   border-bottom: 1px solid #000;
+   margin-bottom: 60px;
+}
+.header1 .header-top{
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+}
+
+/* check the prouducts page site. here I think use flex element is easy to completed the 
+vision effect.I aslo prefer to named the blcok on left and right. and i think here is the 
+same element I need to set for the vision. it looks good */
+
+.coffee-bean{
+    display: flex;
+    justify-content: space-between;
+}
+.coffee-bean .left{
+    width: 60%;
+}
+.coffee-bean .left img{
+    height: 262px;
+}
+.coffee-bean .right{
+    width: 40%;
+    color: #977d7c;
+    text-align: center;
+}
+.coffee-bean .left img{
+    width: 48%;
+}
+.coffee-bean .right h2{
+    font-size: 38px;
+    margin-bottom: 40px;
+}
+.coffee-bean .right .p1{
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+.coffee-bean .right p{
+    line-height: 2;
+    font-size: 20px;
+}
+
+/* i think here is the important part I completed. I think the post always need to combine 
+animation to complete the perfect dynamic effect  */
+.banner{
+    background: url("../img/info/b1.jpg") no-repeat;
+    height: 500px;
+    width: 90%;
+    margin:0px auto 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    color: #fff;
+    animation: lunbo 5s linear;
+    background-size: 100% 100%;
+}
+@keyframes lunbo{
+    0%{
+        background: url("../img/info/b1.jpg");
+        background-size: 100% 100%;
+        
+    }
+    50%{
+        background: url("../img/info/b2.jpg");
+        background-size: 100% 100%;
+    }
+    75%{
+        background: url("../img/info/b3.jpg");
+        background-size: 100% 100%;
+    }
+    100%{
+        background: url("../img/info/b4.png");
+        background-size: 100% 100%;
+    }
+    
+}
+
+
+/* the part of barista. i also choose to use flex complete the tow parts that are left
+and right, then I adjust the position ,or basic space elemnets */
+.barista{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.barista .left{
+    width: 50%;
+}
+.barista .right{
+    width: 50%;
+    text-align: center;
+    color: #977d7c;
+    padding: 40px;
+}
+.barista .left img{
+    width: 100%;
+}
+.barista .right h2{
+    font-size: 40px;
+    
+    margin-bottom: 40px;
+}
+.barista .right p{
+    font-size: 20px;
+    line-height: 2;
+}
+
+
+/* we are going to part of sale. set font-size, color, margin-top and bottom of 
+the sale heading2 . I set the two big of block . because the structure is 
+I set up the outer block first, and then redefined 2 block inside the big one.   */
+.sale h2{
+    font-size: 40px;
+    color: #977d7c;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.salebox{
+    display: flex;
+    justify-content: space-between;
+}
+.salebox .item{
+    width: 24%;
+}
+.salebox .item img{
+    width: 100%;
+    height: 250px;
+}
+.salebox .item .content{
+    margin-top: 20px;
+}
+.salebox .item  i{
+    font-size: 30px;
+    color: #977d7c;
+}
+.salebox .item  a{
+    background-color: #977d7c;
+    color: #fff;
+    border-radius: 20px;
+    padding: 4px 15px;
+}
+
+
+/* shoptitle */
+.shoptitle{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.shoptitle h2{
+    color: #977d7c;
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+.shoptitle h3{
+    color: #977d7c;
+    font-size: 20px;
+}
+.shopbox {
+    display: flex;
+    justify-content: space-between;
+}
+.shopbox .item{
+    width: 45%;
+}
+.shopbox .item img{
+   width: 100%;
+    height: 360px;
+    border-radius: 10px;
+}
+.shopbox .item .content{
+    color: #977d7c;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    line-height: 2;
+}
+.shopbox .item .content p{
+ overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
+}
+.hotsale .item img {
+    height: 300px;
+}
+
+/* online order section. I follow the heading color ,size and I adjust the margin.
+here I also use flex to show the block of left and right side. then i set the left
+image size. and the right I use the form element to show the form which we can 
+fill in the content to order */
+.online-title{
+    font-size: 40px;
+    color: red;
+    margin-top: 40px;
+}
+.online{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.online img{
+    width: 40%;
+    height: 600px;
+}
+.online div{
+    width: 55%;
+    color: #977d7c;
+}
+.online  .form h3{
+    text-align: center;
+    font-size: 34px;
+    margin-top: 40px;
+    margin-bottom: 40px; 
+}
+.online  .form  p{
+    font-size: 20px;
+    margin-top:20px;
+    display: flex;
+    justify-content: space-between;
+}
+.online  .form  p label{
+    width:90px;
+}
+.online  .form  p input,.online  .form  p select{
+    flex: 1;
+    padding: 8px;
+}
+
+.online  .form  textarea{
+    width: 100%;
+}
+.online  .form   button{
+    border-radius: 10px;
+    padding: 8px 30px;
+    border: 1px solid #977d7c;
+    background-color: transparent;
+    font-size: 20px;
+    display: inline-block;
+    margin: 0 auto;
+    color: #977d7c;
+}
+
+/* contact page. it including the information of our 2 coffee shops
+I use flexbox to show the left and right block. I put the two map
+in the left. on the same way, the right area is information and text.
+so I mainly to set the image size, their backgroud color,title font,ect.  */
+.contactbox  .item img{
+    height: 450px;
+}
+.contact{
+    background-color: #977d7c;
+    color: #fff;
+    padding: 30px;
+    margin-top: 30px;
+}
+.contact-title {
+    display: flex;
+    justify-content: space-between;
+}
+.contact-title h2{
+    font-size: 34px;
+    text-align: center;
+    width: 50%;
+    margin-bottom: 40px;
+}
+.contact-shop h4{
+    font-size: 20px;
+    margin-bottom: 15px;
+  
+}
+.contact-shop .h4{
+    width: 35%;
+    text-align: center;
+}
+.contact-shop .content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-shop .content img{
+    width: 35%;
+    margin-bottom: 30px;
+}
+.contact-shop .content .right{
+    width: 55%;
+    font-size: 25px;
+}
+.contact-shop .content .right p{
+    margin-top: 55px;
+}
+.contact-other{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-other .left{
+    width: 35%;
+    text-align: center;
+    font-size: 18px;
+}
+.contact-other .left p{
+    margin-top: 20px;
+}
+.contact-other .right{
+    width: 55%;
+}
+.contact-other .right textarea{
+    width: 100%;
+    margin-top: 15px;
+}
+.contact-other .right button{
+    border-radius: 10px;
+    padding: 8px 30px;
+    border: 1px solid #977d7c;
+    background-color: #fff;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    color: #977d7c;
+    margin-top: 15px;
+}
+/* add some responsive to better present the different perfect effects on user experience.
+so I mainly set the ipad and ipad pro size. after the iphone 6/7/8 size. compare with PC，
+it mostly I made some change the image size and space. for example, margin,height,line-
+height. I think the inline-block is useful here.*/
+
+
+@media screen and (max-width: 1024px) {
+    /* index */
+    .header{
+        height: 80vh;
+    }
+    .header h1{
+        font-size: 46px;
+        margin-top: 20%;
+        letter-spacing:10px;
+    }
+    .header h2,.header h3{
+        width: 100%;
+        line-height: 2;
+        background-color: #977d7c;
+    }
+    .natural .right{
+        margin-right: 0;
+    }
+    .natural{
+        height: 84vh;
+    }
+    .coffee .img{
+        height: 260px;
+    }
+    .coffee .img a{
+        left: 74%;
+    }
+    .cafe{
+        flex-direction: column;
+    }
+    .cafe .item{
+        width: 100%;
+    }
+    .gift .right img{
+        height: 505px;
+    }
+    /* info */
+    .header-top .left{
+        display: none;
+    }
+    .header {
+        height: auto;
+    }
+    .coffee-bean{
+        flex-direction: column;
+    }
+    .coffee-bean .left{
+        width: 100%;
+    }
+    .coffee-bean .right{
+        width: 100%;
+    }
+    .barista{
+        flex-direction: column;
+    }
+    .barista .left{
+        width: 100%;
+    }
+    .barista .right{
+        width: 100%;
+    }
+    .salebox .item{
+        width: 49%;
+        margin-bottom:30px;
+    }
+    .salebox{
+        flex-flow: wrap;
+    }
+    /* cafe */
+    .shopbox .item img{
+        height: 320px;
+    }
+    .online{
+        flex-direction: column;
+    }
+    .online img{
+        width: 100%;
+    }
+    .online div{
+        width: 100%;
+    }
+    .online .form p input, .online .form p select {
+       border: 1px solid #ddd;
+    }
+    .online .form p textarea{
+        border: 1px solid #ddd;
+    }
+    .contact-shop .content .right p{
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+}
+@media screen and (max-width: 750px) {
+    /* index */
+    .header{
+        height: 60vh;
+    }
+    .header-top{
+        width: 90%;
+        flex-direction: column;
+    }
+    .header-top a.first{
+        margin-left: 70px;
+    }
+    .header-top a{
+        margin: 0 10px;
+    }
+    .header-top .left,.header-top .right{
+        display: none;
+    }
+    .header h1{
+        font-size: 40px;
+        margin-top: 20%;
+        letter-spacing: normal;
+    }
+    .header h2,.header h3{
+        width: 100%;
+        background-color: #977d7c;
+    }
+    .natural{
+        height: 105vh;
+    }
+    .natural .wrap{
+        width: 90% !important;
+        flex-direction: column;
+    }
+    .natural .left{
+        margin-top: 30px;
+    }
+    .natural .right {
+        margin-right: 0;
+    }
+    .natural .right h1 {
+        font-size: 32px;
+    }
+    .coffee{
+        flex-direction: column;
+    }
+    .coffee .item{
+        width: 100%;
+    }
+    .coffee .img{
+        height: 300px;
+    }
+    .cafe{
+        flex-direction: column;
+    }
+    .cafe .item{
+        width: 100%;
+        padding: 30px;
+    }
+    .cafe .item .it{
+        flex-direction: column;
+    }
+    .cafe .item .it img{
+        width: 100%;
+    }
+    .cafe .item .it div{
+        margin-left: 0;
+    }
+    .gift{
+        flex-direction: column;
+    }
+    .gift .left{
+        width: 100%;
+    }
+    .gift .right{
+        width: 100%;
+    }
+    .gift .right img{
+        height: auto;
+    }
+
+    /* info */
+    .header1{
+        height: auto;
+    }
+    .coffee-bean{
+        flex-direction: column;
+    }
+    .coffee-bean .left{
+        width: 100%;
+    }
+    .coffee-bean .left img {
+        width:100%;
+    }
+    .coffee-bean .right{
+        width: 100%;
+    }
+    .banner{
+        font-size: 30px;
+        height: 280px;
+    }
+    .barista{
+        flex-direction: column;
+    }
+    .barista .left{
+        width: 100%;
+    }
+    .barista .right{
+        width: 100%;
+        padding: 30px;
+    }
+    .salebox{
+        flex-direction: column;
+    }
+    .salebox .item{
+        width: 100%;
+    }
+    .salebox .item .content{
+        margin-bottom: 30px;
+    }
+    /* cafe */
+    .shopbox{
+        flex-direction: column;
+    }
+    .shopbox .item{
+        width: 100%;
+    }
+    .shopbox .item img{
+        height: 320px;
+    }
+    .online{
+        flex-direction: column;
+    }
+    .online img{
+        width: 100%;
+        height: auto;
+    }
+    .online div{
+        width: 100%;
+    }
+    .online .form p input, .online .form p select {
+        border: 1px solid #ddd;
+    }
+    .online .form textarea{
+        border: 1px solid #ddd;
+    }
+
+    /* contact */
+    .contact-title{
+        flex-direction: column;
+    }
+    .contact-title h2{
+        width: 100%;
+    }
+    .contact-shop .content{
+        flex-direction: column;
+    }
+    .contact-shop .content img{
+        width: 100%;
+    }
+    .contact-shop .content .right{
+        width: 100%;
+        font-size: 20px;
+    }
+    .contact-other{
+        flex-direction: column;
+    }
+    .contact-other .left{
+        width: 100%;
+    }
+    .contact-other .right{
+        width: 100%;
+    }
+    .contact-other .right h2{
+        margin-top: 30px;
+    }
+    .contact-shop .content .right p{
+        margin-top: 20px;
+    }
+    .contact-shop .h4{
+        display: none;
+    }
+}
