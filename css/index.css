@@ -1,0 +1,546 @@
+/* I reset the entire page to form a unified format */
+*{
+    margin:0;
+    padding:0;
+    outline:0;  
+    box-sizing: border-box;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+.wrap{
+    width: 90%;
+    margin: 0 auto;
+}
+body{
+    color: #afa8a8;
+    font-family: 'PingFangSC-Medium,PingFang SC';
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+}
+textarea{
+    resize: none;
+}
+/* header */
+.header{
+    background-image: url(../img/home/WechatIMG2257.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 78vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.header .mask{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background:rgba(255, 255, 255, .5);
+}
+.header .img {
+    text-align: center;
+    position: relative;
+    z-index: 1000;
+}
+.header .img img{
+    border-radius: 50%;
+    width: 180px;
+
+}
+.header h2{
+    margin-top: 20px;
+    font-size: 30px;
+}
+.header .menus{
+    position: absolute;
+    right:10%;
+    top: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1001;
+}
+.header .menus a{
+    font-size: 18px;
+    line-height: 2;
+    color: #afa8a8;
+}
+.header .menus i{
+    font-size: 30px;
+    margin-left: 40px;
+}
+.textbox{
+    background: #dedeea;
+    padding: 50px 0 70px;
+    color: #999195;
+    margin-top: 50px;
+}
+.textbox .question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.textbox .question h2{
+    width: 33.33%;
+}
+.textbox .question i{
+    font-size: 200px;
+    color: #bbb6be;
+}
+.textbox .infomation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.textbox .infomation .item{
+    background: #e6e6e9;
+    width: 23%;
+    text-align: center;
+    font-size: 30px;
+    padding: 60px 0;
+}
+.skillbox{
+    padding-top: 70px;
+    border-bottom: 1px solid #000;
+}
+.skillbox .skill{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.skillbox .skill .item{
+    width: 30%;
+   margin-bottom: 70px;
+   text-align: center;
+    
+}
+.skillbox .skill .item img{
+    width: 50%;
+}
+.compositionbox{
+    padding: 70px 0;
+    color: #796d6d;
+}
+.compositionbox .title{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.compositionbox .photography{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+.compositionbox .photography .left{
+    width: 45%;
+}
+.compositionbox .photography .left img{
+    width: 80%;
+}
+.compositionbox .photography .left h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.compositionbox .photography .right{
+    width: 45%;
+}
+.compositionbox .photography .right h2{
+    font-size: 40px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.compositionbox .photography .right p{
+    font-size: 26px;
+}
+.compositionbox .img img{
+    max-height: 550px;
+    width: 100%;
+    margin-top: 30px;
+}
+.compositionbox .img1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.compositionbox .img1 .img2{
+    width: 48%;
+    margin-top: 70px;
+    text-align: center;
+}
+.compositionbox .img1 .img2 img{
+    width: 80%;
+}
+.more{
+    text-align: right;
+    font-size: 26px;
+    margin-top: 40px;
+    margin-right: 60px;
+}
+.more a{
+    color: #796d6d;
+}
+.graphicsbox{
+    background: #dedeea;
+    padding: 50px 0;
+    color: #796d6d;
+}
+.graphicsbox .title{
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+}
+.graphicsbox .title img{
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+}
+.graphicsbox .img{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.graphicsbox .img .img1{
+    width: 48%;
+    text-align: center;
+    margin-top: 50px;
+}
+.graphicsbox .img .img1 img{
+    width: 80%;
+}
+.design{
+    padding: 200px 0 100px 0;
+}
+.design .title{
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+}
+.design .title img{
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+}
+.design  .img{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.design  .img .img1{
+    width: 45%;
+    margin-top: 50px;
+}
+.design  .img .img1 img{
+    width: 100%;
+}
+.design .img2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+.design .img2 img{
+    width: 25%;
+}
+.web{
+    padding: 50px 0;
+}
+.web .title{
+    font-size: 40px;
+    margin-bottom: 70px;
+}
+.web .img{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.web .wrap img{
+    width: 45%;
+}
+.importantbox{
+    padding: 70px 0;
+    background: #dedeea;
+}
+.importantbox h2{
+    font-size: 40px;
+    margin-bottom: 60px;
+    color: #796d6d;
+}
+.importantbox input{
+    border-radius: 10px;
+    border: none;
+    height: 36px;
+}
+.importantbox form{
+    width: 40%;
+    margin: 0 auto;
+}
+.importantbox .it{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.importantbox .it input{
+    flex: 1;
+    padding:10px;
+}
+.importantbox label{
+    font-size: 24px;
+    width: 100px;
+    color: #796d6d;
+}
+.importantbox  textarea{
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    padding:10px;
+}
+.importantbox .btn{
+    text-align: center;
+    margin-top: 30px;
+}
+.importantbox button{
+    font-size: 24px;
+    border: none;
+    background: #fff;
+    border-radius: 10px;
+    color: #796d6d;
+    padding: 10px 20px;  
+}
+footer{
+    text-align: center;
+    font-size: 24px;
+    padding: 30px 0;
+    color: #796d6d;
+}
+.contactbox {
+    padding: 50px 0;
+    font-size: 18px;
+    position: relative;
+}
+.contactbox .wrap{
+    width: 70%;
+}
+.contactbox .contact{
+    display: flex;
+    justify-content: space-between;
+}
+.contactbox .contact .left{
+    width: 30%;
+}
+.contactbox .contact .left .tou{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: block;
+}
+.contactbox .contact .right{
+    width: 65%;
+    font-size: 22px;
+    line-height: 1.8;
+}
+.contactbox .contact .right .text{
+    margin-bottom: 50px;
+}
+.contactbox .contact .right .fa-mobile{
+    font-size: 40px;
+}
+.contactbox .contact .right p{
+    margin-bottom: 20px;
+}
+.contactbox  .menus{
+    position: absolute;
+    right:10%;
+    top: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contactbox .menus a{
+    font-size: 18px;
+    line-height: 2;
+    color: #afa8a8;
+}
+.contactbox .menus i{
+    font-size: 30px;
+    margin-left: 40px;
+}
+.needbox{
+    padding: 50px 0;
+    background: url(../img/contact/black-board-with-white-letters-your-feelings-are-valid.jpg) no-repeat;
+    background-size: 100% 100%;
+    opacity: .6;
+}
+.needbox h2{
+    text-align: center;
+    font-size: 40px;
+    color: #000;
+    margin-bottom: 60px;
+}
+.needbox form{
+    width: 50%;
+    margin: 0 auto;
+}
+.needbox form label{
+    font-size: 26px;
+    width: 130px;
+    display: inline-block;
+    color: #000;
+    margin-top: 15px;
+}
+.needbox form  .it{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.needbox form  .it input{
+    flex: 1;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+}
+.needbox form textarea{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    background-color: #dedeea;
+    margin-top: 40px;
+}
+.needbox form  .btn{
+    text-align: center;
+}
+.needbox form button{
+    border: none;
+    border-radius: 20px;
+    font-size: 24px;
+    padding: 10px 20px;
+    background-color: #dedeea;
+    margin-top: 20px;
+}
+/* contact */
+@media screen and (max-width: 1024px) {
+    .graphicsbox .img .img1{
+        width: 50%;
+    }
+    .graphicsbox .img .img1 img{
+        height: 300px;
+    }
+    .importantbox form{
+        width: 80%;
+    }
+
+    .contactbox .wrap {
+        width: 85%;
+    }
+    .contactbox .menus {
+        left: 8%;
+        top: 57%;  
+        width: 21%;
+    }
+    .needbox form{
+        width: 80%;
+    }
+
+}
+@media screen and (max-width: 750px) {
+    .header .menus{
+        top: 5%;
+    }
+    .header h2{
+        color: #6E6464;
+    }
+    .textbox .question{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .textbox .question h2{
+        width: 100%;
+    }
+    .textbox .question i{
+        margin: 0 auto;
+    }
+    .textbox .infomation{
+        flex-wrap: wrap;
+    }
+    .textbox .infomation .item{
+        width: 49%;
+        margin-top: 10px;
+    }
+    .compositionbox .photography{
+        flex-wrap: wrap;
+    }
+    .compositionbox .photography .left{
+        width: 100%;
+    }
+    .compositionbox .photography .right{
+        width: 100%;
+    }
+    .compositionbox .photography .left img{
+        width: 100%;
+    }
+    .compositionbox .img1 .img2{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .compositionbox .img1 .img2 img{
+        width: 100%;
+        
+    }
+    .graphicsbox .img .img1{
+        width: 100%;
+    }
+    .graphicsbox .img .img1 img{
+        height: auto
+    }
+    .design {
+        padding: 50px 0 50px 0;
+    }
+    .design .img .img1{
+        width: 100%;
+    }
+    .design .img2 img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .web .wrap img{
+        width: 100%;
+        margin-bottom:40px;
+    }
+    .contactbox .contact{
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+    .contactbox .contact .left{
+        width: 100%;
+        text-align: center;
+    }
+    .contactbox .contact .left .tou{
+        margin: 0 auto;
+    }
+    .contactbox .contact .right{
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .contactbox .menus {
+        left: 65%;
+        top: 0;
+        width: 35%;
+    }
+    .contactbox .menus i{
+        margin-left: 20px;
+    }
+}
